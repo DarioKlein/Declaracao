@@ -6,7 +6,7 @@
   --envelope-cover: #e6cfa7;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --txt-color: #444;
-  --heart-color: rgb(252, 8, 231);
+  --heart-color: red;
 }
 body {
   position: relative;
@@ -90,7 +90,7 @@ body::before {
   text-align: left;
   font-size: 10px;
   height: 50%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .heart {
   position: absolute;
