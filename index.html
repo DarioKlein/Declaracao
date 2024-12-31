@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>Para o Amor da minha Vida</strong>
+              <p>
+                Amor, antes de te conhecer meus dias eram cinzas, sem cor, monótonos, vazios, mas desde o primeiro dia que eu te conheci, minha vida ganhou um novo sentido e os meus dias passaram a ser coloridos, você me transformou, me trouxe paz, e me fez sorrir novamente. Eu quero viver para sempre ao seu lado, em todos os momentos da minha vida, você é a mulher dos meus sonhos, a minha princesa, a futura mãe dos meus filhos. <br> Ainda que eu utilizasse todas as palavras disponíveis em todas as línguas do nosso planeta, ainda não seria o suficiente para por em palavras os meus sentimentos por você meu amor, eu te amo mil milhões.
+              </p>
+              <strong>Com Amor, Dário.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="heart"></div>
+      </div>
+    </div>
+    <script>
+      const envelope = document.querySelector('.envelope-wrapper')
+      envelope.addEventListener('click', () => {
+        envelope.classList.toggle('flap')
+      })
+    </script>
+  </body>
+</html>
